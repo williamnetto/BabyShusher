@@ -33,9 +33,10 @@ export const App = () =>  {
 
   return (
     <div className="App">
-      <Row className='mt-5'>
+      <h1 style={{margin: '10px'}}>Dorme Bebê =)</h1>
+      <Row>
       { audios.map((item) => 
-        <Col>
+        <Col style={{margin: '10px'}}>
           <Button color='success' size='lg' onClick={() => toggle(item.audio)} style={{width: '200px'}}>
             {!item.audio.paused && <img src={soundIcon} alt='play' height="32" width="32" style={{marginRight: '10px'}} />}
             {item.name}
